@@ -10,12 +10,9 @@ public class directInsert {
 		int i,j,temp;
 		for(i=1;i<array.length;i++) {
 			temp = array[i];
-			for(j=i;j>0&&array[j-1]>temp;j--) {
-				
-					array[j] = array[j-1];
-					array[j-1] = temp;
-				
-				
+			for(j=i;j>0&&array[j-1]>temp;j--) {		
+				array[j] = array[j-1];
+				array[j-1] = temp;		
 			}
 		}
 		for(int k = 0; k<array.length; k++) {
