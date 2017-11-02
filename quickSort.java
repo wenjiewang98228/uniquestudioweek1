@@ -9,9 +9,9 @@ public class quickSort {
 		int start = 0;
 		int end = arr.length-1;
 		
-		printArray("ÅÅĞòÇ°£º",arr);
+		printArray("æ’åºå‰ï¼š",arr);
         QuickSort(arr,0,arr.length-1);
-        printArray("\n"+"ÅÅĞòºó£º",arr);
+        printArray("\n"+"æ’åºåï¼š",arr);
 	}
 
 	
