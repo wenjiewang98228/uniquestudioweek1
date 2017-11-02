@@ -18,10 +18,10 @@ public class heapSort {
 		}
 	
 		for (i = array.length - 1; i >= 0; i--) {
-            int temp = array[0];
-            array[0] = array[i];
-            array[i] = temp;
-           maxHeapify(array, 0, i - 1);
+                int temp = array[0];
+                array[0] = array[i];
+                array[i] = temp;
+                maxHeapify(array, 0, i - 1);
         }
 		printArray("\n"+"排序后：",array);
 	}
@@ -29,22 +29,23 @@ public class heapSort {
 	public static void maxHeapify(int[] array,int i,int len) {
 		
 		int temp, j;
-        temp = array[i];
-        for (j = 2 * i; j < len; j *= 2) {
-            if (j < len && array[j] < array[j + 1])
-                ++j; 
-            if (temp >= array[j])
-                break;
-            array[i] = array[j];
-            i = j;
-        }
-        array[i] = temp;
- 	} 
+                temp = array[i];
+                for (j = 2 * i; j < len; j *= 2) {
+                if (j < len && array[j] < array[j + 1])
+                    ++j; 
+                if (temp >= array[j])
+                    break;
+                array[i] = array[j];
+                i = j;
+                }
+                array[i] = temp;
+ 	    } 
 	
 	public static void printArray(String s,int[] array) {
 		System.out.print(s+"\n");
-        for(int i=0;i<array.length;i++)
-            System.out.print(array[i]+"\t");    
-        System.out.println();
+                
+		for(int i=0;i<array.length;i++)
+                System.out.print(array[i]+"\t");    
+		System.out.println();
 	}
 }
