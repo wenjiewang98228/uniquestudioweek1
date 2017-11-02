@@ -15,7 +15,7 @@ public class shellSort {
 	static void shellSort(int[] array) {
 		int count = 1;
 		for(int m=array.length; m>0;m=m/2) {
-			System.out.println("\n"+"µÚ"+count+"¸öÔöÁ¿Îª"+m);
+			System.out.println("\n"+"ç¬¬"+count+"ä¸ªå¢é‡ä¸ºï¼š"+m);
 			for(int n=0;n+m<array.length;n++) {
 				if(array[n]>array[n+m]) {
 					int temp = array[n];
@@ -24,7 +24,7 @@ public class shellSort {
 				}
 			}
 			count++;
-			System.out.println("ÅÅĞòºóÎª");
+			System.out.println("Ã…Ã…ÃÃ²ÂºÃ³ÃÂª");
 			for(int k=0;k<array.length;k++) {
 				System.out.print(array[k]+"\t");
 			}
