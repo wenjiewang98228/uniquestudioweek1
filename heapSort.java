@@ -7,8 +7,8 @@ public class heapSort {
 
 		int[] arr = {48,45,99,68,17,31,75,36,15,69};
 		
-		printArray("ÅÅĞòÇ°£º",arr);
-        HeapSort(arr);
+		printArray("æ’åºå‰ï¼š",arr);
+    	        HeapSort(arr);
 	}
 	
 	public static void HeapSort(int[] array) {
@@ -23,7 +23,7 @@ public class heapSort {
             array[i] = temp;
            maxHeapify(array, 0, i - 1);
         }
-		printArray("\n"+"ÅÅĞòºó£º",array);
+		printArray("\n"+"æ’åºåï¼š",array);
 	}
 
 	public static void maxHeapify(int[] array,int i,int len) {
